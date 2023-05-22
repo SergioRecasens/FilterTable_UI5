@@ -1,0 +1,7 @@
+{
+    "dataBinding": {
+        "/webapp/view/MainView.view.xml": {
+            "entitySet": ""
+        }
+    }
+}

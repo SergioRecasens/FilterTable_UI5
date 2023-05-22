@@ -1,0 +1,76 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.filtertable.controller.MainView" xmlns="sap.m">
+    <Page showHeader="true" title="{i18n>appTitle}" showFooter="true" showNavButton="false">
+        <content>
+            <Table id="supplierTable" items="{suppliersModel>/d/results}" width="auto" class="sapUiResponsiveMargin">
+                <infoToolbar>
+                    <OverflowToolbar id="suppliersFilterBar" design="Solid"  visible="false">
+                        <Text id="suppliersFilterLabel" />
+                    </OverflowToolbar>
+                </infoToolbar>
+                <headerToolbar>
+                    <OverflowToolbar>
+                        <ToolbarSpacer />
+                        <OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="handleOpenDialogSort" />
+                        <OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="handleOpenDialogFilter" />
+                        <OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="handleOpenDialogGroup" />
+                        <OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true" visible="false" iconDensityAware="false" press="onPersoButtonPressed" />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="SupplierID" width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <Text text="Supplier ID" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="CompanyName" width="170px" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="WithoutHeader" mergeDuplicates="false">
+                        <Text text="Company name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="CompanyType" width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+                        <Text text="Company type" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="Address" visible="false" width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                        <Text text="Address" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="City" visible="false" width="auto" hAlign="Right" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <Text text="City" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="Region" visible="false" width="auto" hAlign="Right" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <Text text="Region" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="PostalCode" visible="false" width="auto" hAlign="Right" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <Text text="Postal code" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="Country" width="auto" hAlign="Right" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+                        <Text text="Country" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>
+                    <Column id="CreationDate" visible="false" width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Desktop" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+                        <Text text="Creation date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true" />
+                    </Column>                                    
+                </columns>
+                <items>
+                    <ColumnListItem type="Navigation" press="_onRowPress">
+                            <ObjectAttribute text="{suppliersModel>SupplierID}" visible="true"/>
+                            <ObjectAttribute text="{suppliersModel>CompanyName}" textDirection="Inherit" visible="true" />
+                            <ObjectAttribute text="{suppliersModel>CompanyType}" textDirection="Inherit" visible="true" />
+                            <ObjectAttribute text="{suppliersModel>Address}" textDirection="Inherit" visible="true" />
+                            <ObjectAttribute text="{suppliersModel>City}" />
+                            <ObjectAttribute text="{suppliersModel>Region}" />
+                            <ObjectAttribute text="{suppliersModel>PostalCode}" />
+                            <ObjectAttribute text="{suppliersModel>Country}" />
+                            <ObjectAttribute
+                                text="{
+                                        path: 'suppliersModel>CreationDate',
+                                        type: 'sap.ui.model.type.Date',
+                                        formatOptions: {
+                                            style: 'short',
+                                            source: {
+                                                pattern: 'yyyyMMdd',
+                                                strictParsing: true
+                                            }
+                                        }
+                                    }"
+                            />
+                    </ColumnListItem>
+                </items>
+            </Table> 
+        </content>
+    </Page>
+</mvc:View>

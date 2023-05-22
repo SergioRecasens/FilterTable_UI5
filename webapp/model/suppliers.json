@@ -1,0 +1,83 @@
+{
+    "d": {
+        "results": [
+            {
+                "SupplierID": 1,
+                "CompanyName": "New Orleans Cajun Delights",
+                "CompanyType": "Sales",
+                "Address": "P.O. Box 78934",
+                "City": "New Orleans",
+                "Region": "LA",
+                "PostalCode": "70117",
+                "Country": "USA",
+                "CreationDate": "20230520"
+            },
+            {
+                "SupplierID": 2,
+                "CompanyName": "Exotic Liquids",
+                "CompanyType": "Accounting",
+                "Address": "49 Gilbert St.",
+                "City": "London",
+                "Region": "UK",
+                "PostalCode": "EC1 4SD",
+                "Country": "UK",
+                "CreationDate": "20230122"
+            },
+            {
+                "SupplierID": 3,
+                "CompanyName": "Grandma Kelly's Homestead",
+                "CompanyType": "Sales",
+                "Address": "707 Oxford Rd.",
+                "City": "Ann Arbor",
+                "Region": "MI",
+                "PostalCode": "48104",
+                "Country": "USA",
+                "CreationDate": "20230518"
+            },
+            {
+                "SupplierID": 4,
+                "CompanyName": "Forêts d'érables",
+                "CompanyType": "Accounting",
+                "Address": "148 rue Chasseur",
+                "City": "Ste-Hyacinthe",
+                "Region": "Québec",
+                "PostalCode": "J2S 7S8",
+                "Country": "Canada",
+                "CreationDate": "20230518"
+            },
+            {
+                "SupplierID": 5,
+                "CompanyName": "Plutzer Lebensmittelgroßmärkte AG",
+                "CompanyType": "Marketing",
+                "Address": "Bogenallee 51",
+                "City": "Frankfurt",
+                "Region": "DE",
+                "PostalCode": "60439",
+                "Country": "Germany",
+                "CreationDate": "20230211"
+            },
+            {
+                "SupplierID": 6,
+                "CompanyName": "Lyngbysild",
+                "CompanyType": "Sales",
+                "Address": "Lyngbysild Fiskebakken 10",
+                "City": "Lyngby",
+                "Region": "NL",
+                "PostalCode": "2800",
+                "Country": "Denmark",
+                "CreationDate": "20230216"
+            },
+            {
+                "SupplierID": 7,
+                "CompanyName": "Formaggi Fortini s.r.l.",
+                "CompanyType": "Marketing",
+                "Address": "Viale Dante, 75",
+                "City": "Ravenna",
+                "Region": "IL",
+                "PostalCode": "48100",
+                "Country": "Italy",
+                "CreationDate": "20230216"
+            }
+        ]
+    }
+}

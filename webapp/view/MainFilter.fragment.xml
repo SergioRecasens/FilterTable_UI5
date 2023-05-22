@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <ViewSettingsDialog confirm="handleConfirm">
+        <sortItems />
+        <groupItems />
+        <filterItems />
+    </ViewSettingsDialog>
+</core:FragmentDefinition>
