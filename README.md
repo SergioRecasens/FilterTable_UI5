@@ -1,5 +1,5 @@
 # FilterTable_UI5
- Apply Sort, Filter and Group data features within a List (sap.m.List) or a table (sap.m.Table) with the ViewSettingsDialog element in a dynamic form.
+## Apply Sort, Filter and Group data features within a List (sap.m.List) or a table (sap.m.Table) with the ViewSettingsDialog element in a dynamic form.
 
 Read the blog I created in SAP Community here: https://blogs.sap.com/?p=1768479&preview=true&preview_id=1768479
  
